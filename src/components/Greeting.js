@@ -6,7 +6,7 @@ const Greeting = () => {
   const greeting = useSelector((state) => state.greetings);
   const dispatch = useDispatch();
 
-  useEffect(() => { dispatch(getMessage())}, [dispatch]);
+  useEffect(() => { dispatch(getMessage()); }, [dispatch]);
 
   return (
     <div>
